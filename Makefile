@@ -5,4 +5,4 @@ setup:
 	pip install -r requirements.txt
 test: 
 	export PYTHONPATH=src
-	pytest 
+	coverage run --source=src -m pytest && coverage report
